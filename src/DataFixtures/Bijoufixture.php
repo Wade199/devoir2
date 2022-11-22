@@ -22,9 +22,7 @@ class Bijoufixture extends Fixture
         for($i=0;$i<10;$i++){
             $bijou = new Bijou();
             $bijou->setdescription($this->faker->paragraph());
-            $bijou->setPrixVente($this->faker->sentence(3));
-            $bijou->setPrixLocation($this->faker->sentence(3));
-            $bijou->setCatégorie($this->faker->sentence(3));
+            $bijou->setPrixVente($this->faker->sentence());
             $this->addReference('Bijou'.$i, $bijou);
         }
 
